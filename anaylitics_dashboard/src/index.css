@@ -1,0 +1,124 @@
+html, body, main {
+  margin: 0;
+  padding: 0;
+  /* Make the body to be as tall as browser window */
+  height: 100%;
+  background: #ccc;
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+.App-b, #root {
+  height: 100%;
+}
+
+.main-side-nav {
+  height: 100%;
+  height: calc(100% - 5em);
+  background-color: #4D4C72;
+  max-width: 5em;
+  float: left;
+  width: 100%;
+}
+
+.side-nav {
+  padding: 0em;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 35%;
+  /* fallback if needed */
+  overflow: auto;
+  margin: auto;
+}
+
+.dashboard-icon {
+  background: url('./icons/icon-dashboard.svg');
+}
+
+.members-icon {
+  background: url('./icons/icon-members.svg');
+}
+
+.visits-icon {
+  background: url('./icons/icon-visits.svg');
+}
+
+.settings-icon {
+  background: url('./icons/icon-settings.svg');
+}
+
+.google-icon {
+  background: url('./icons/google.svg');
+}
+
+.facebook-icon {
+  background: url('./icons/facebook.svg');
+}
+
+.twitter-icon {
+  background: url('./icons/twitter.svg');
+}
+
+.twitter-icon, .google-icon, .facebook-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 4.8em;
+  width: 4.8em;
+  margin: auto;
+}
+
+.settings-icon, .visits-icon, .dashboard-icon, .members-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 1.8em;
+  width: 1.8em;
+  margin: auto;
+}
+
+.icons-background {
+  background: #7377BF;
+  border-radius: 100%;
+  padding: 1em;
+}
+
+.switcher .office {
+  #bulb {
+    animation: switch 3s 4 ease both;
+  }
+  #background {
+    animation: fillChange 3s 4 ease both;
+  }
+}
+
+@keyframes switch {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fillChange {
+  50% {
+    fill: #FFDB79;
+  }
+}
+
+/* .twitter-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 1.8em;
+  width: 1.8em;
+  margin: auto;
+} */
+
+.side-nav li:active, .side-nav li:focus, .side-nav li:focus-within {
+  border-left: 2px solid #80C98E;
+}
