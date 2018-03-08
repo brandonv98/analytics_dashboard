@@ -3,22 +3,31 @@ html, body, main {
   padding: 0;
   /* Make the body to be as tall as browser window */
   height: 100%;
-  background: #ccc;
+  /* background: #ccc; */
   font-family: 'Varela Round', sans-serif;
   line-height: 1.6;
   color: #3a3a3a;
   margin: 0;
 }
 
-.App-b, #root {
+.App-b, #root, .main-grid, .side-bar-nav {
   height: 100%;
+}
+
+.side-bar-nav div:nth-child(1) {
+  padding: 0;
+  height: 100%;
+  height: calc(100% + .5em);
+}
+
+.view-point {
+  padding-left: 1.5em;
 }
 
 .main-side-nav {
   height: 100%;
-  height: calc(100% - 5em);
+  /* height: calc(100% - 5em); */
   background-color: #4D4C72;
-  max-width: 5em;
   float: left;
   width: 100%;
 }
@@ -69,8 +78,8 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  height: 4.8em;
-  width: 4.8em;
+  height: 4em;
+  width: 4.1em;
   margin: auto;
 }
 
@@ -86,7 +95,7 @@ ul {
 .icons-background {
   background: #7377BF;
   border-radius: 100%;
-  padding: 1em;
+  padding: 1em !important;
 }
 
 .switcher .office {
@@ -120,5 +129,5 @@ ul {
 } */
 
 .side-nav li:active, .side-nav li:focus, .side-nav li:focus-within {
-  border-left: 2px solid #80C98E;
+  border-left: 3.5px solid #80C98E;
 }
