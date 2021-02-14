@@ -57,7 +57,7 @@ export default class App extends Component {
           <div className="flex spaced popup-alert">
             <div className="grouped">
               <span className="alert">Alert </span>
-              <span className="alert-info">Null - This is a alert telling you about the alert, and how this means nothing at all. But to have you was your time reading it :)</span>
+              <span className="alert-info">Null - This is a alert telling you about the alert, and how this means nothing at all, but to have you see notification interaction work in UI & UX :)</span>
             </div>
             <span className="close-btn">x</span>
           </div>
